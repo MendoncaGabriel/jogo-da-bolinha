@@ -6,7 +6,7 @@ let x = 320 //metade da tela root
 let y = 240
 let px = 0
 let py = 0
-let vel = 3
+let vel = 5
 
 export const player = {
     x: 100,

@@ -21,6 +21,11 @@ export const point = {
     height: 50
 };
 
+let toChangeDirection = 5000
+setInterval(() => {
+    direction = Math.floor(Math.random() * 8)
+}, toChangeDirection);
+
 
 
 
@@ -73,6 +78,8 @@ function controlPoint(obj){
             direction = Math.floor(Math.random() * 8)
             vel += 0.1
             cont++
+            if(toChangeDirection > 1000){toChangeDirection-=100}
+
             document.getElementById('cont').innerText = cont
         }
      
