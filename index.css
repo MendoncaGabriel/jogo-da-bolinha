@@ -1,0 +1,16 @@
+#root{
+    width: 640px;
+    height: 480px;
+    border: 2px solid gray;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+#cont{
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
