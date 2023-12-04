@@ -5,7 +5,7 @@ function object(root) {
     function point() {
         let point = document.createElement('div')
         point.id = 'point'
-        controlPoint(point)
+        controlPoint(point, 'pointBlue')
         root.appendChild (point)
     }
 
@@ -16,7 +16,14 @@ function object(root) {
         root.appendChild (player)
     }
 
-    return { player, point };
+    function pointRed(){
+        let poinBad = document.createElement('div')
+        poinBad.id = 'pointBad'
+        controlPoint(poinBad, 'pointRed')
+        root.appendChild (poinBad)    
+    }
+
+    return { player, point, pointRed };
 }
 
 export default object;
