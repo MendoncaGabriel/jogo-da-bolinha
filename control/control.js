@@ -16,32 +16,54 @@ export const player = {
 };
 
 function control(obj){
+    function scaleButton(button, scale){
+        if(scale == 'up'){
+            document.getElementById(button).style.scale = 1.2 
+            document.getElementById(button).style.backgroundColor = 'white'
+            document.getElementById(button).style.color = 'black'
+        }else{
+            document.getElementById(button).style.scale = 1
+            document.getElementById(button).style.backgroundColor = 'rgb(18, 18, 18)'
+            document.getElementById(button).style.color = 'white'
+
+        }
+        
+    }
+
     document.addEventListener('keydown', (e)=>{
         if(e.keyCode == 65){ //left
             px = -1
+            scaleButton('A', 'up')
         }
         if(e.keyCode == 68){ //right
             px = 1
+            scaleButton('D', 'up')
         }
         if(e.keyCode == 83){ //down
             py = 1
+            scaleButton('S', 'up')
         }
         if(e.keyCode == 87){ //up
             py = -1
+            scaleButton('W', 'up')
         }
     })
     document.addEventListener('keyup', (e)=>{
         if(e.keyCode == 65){ //left
             px = 0
+            scaleButton('A')
         }
         if(e.keyCode == 68){ //right
             px = 0
+            scaleButton('D')
         }
         if(e.keyCode == 83){ //down
             py = 0
+            scaleButton('S')
         }
         if(e.keyCode == 87){ //up
             py = 0
+            scaleButton('W')
         }
     })
     

@@ -32,3 +32,31 @@ body{
     color: white;
     background-color: rgb(18, 18, 18);
 }
+
+.containerControl{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 5%;
+    
+}
+.containerControl > span {
+    background-color: rgb(18, 18, 18) ;
+    color: white ;
+    margin-left: 4px;
+    margin-right: 4px;
+    flex: none;
+    transition: 300px ease-in;
+    border: 2px solid white ;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
